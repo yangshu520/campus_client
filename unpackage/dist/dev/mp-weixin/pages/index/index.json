@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "东龙校园",
+  "usingComponents": {
+    "u-image": "/node-modules/uview-ui/components/u-image/u-image",
+    "u-loading": "/node-modules/uview-ui/components/u-loading/u-loading"
+  }
+}

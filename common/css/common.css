@@ -1,0 +1,21 @@
+page,
+view,
+scroll-view,
+text,
+image,
+textarea,
+button,
+input {
+	box-sizing: border-box;
+	font-family: "Adobe 黑体 Std";
+}
+
+image{
+	width: 100%;
+	height: 100%;
+}
+
+/* 全局loading样式 */
+.uni-toast__content{
+	font-size: 28rpx!important;
+}

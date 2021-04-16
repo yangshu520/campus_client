@@ -1,0 +1,105 @@
+// 最常用的颜色
+$color01:#000000;
+$color02:#333333;
+$color03:#666666;
+$color04:#999999;
+
+// 最常用的字体大小
+$fontSize01:36rpx;
+$fontSize02:32rpx;
+$fontSize03:28rpx;
+$fontSize04:24rpx;
+
+// 最常用的字体
+$fontFamily01:'黑体';
+$fontFamily02:'STHeitiTC';
+$fontFamily03:'HiraginoSansGB W3';
+$fontFamily04:'PingFang SC BOld';
+$fontFamily05:'SourceHanSansCN Regular';
+$fontFamily06:'SourceHanSansCN Medium';
+$fontFamily06:'SourceHanSansCN Light';
+
+//flex布局复用
+@mixin flex($hov:space-between,$col:center){
+  display:flex;
+  justify-content:$hov;
+  align-items:$col;
+}
+// 背景图服用
+@mixin bgImg($w:0,$h:0,$img:'',$size:contain){
+  display:inline-block;
+  width:$w;
+  height:$h;
+  background:url($img) no-repeat center;
+  background-size:$size;
+}
+// 定位复用
+@mixin position($pos:absolute,$top:0,$left:0,$w:100%,$h:100%){
+  position:$pos;
+  top:$top;
+  left:$left;
+  width:$w;
+  height:$h;
+}
+// 图片定位复用
+@mixin positionImg($pos:absolute,$top:0,$right:0,$w:0,$h:0,$img:''){
+  position:$pos;
+  top:$top;
+  right:$right;
+  width:$w;
+  height:$h;
+  background:url($img) no-repeat center;
+  background-size:contain;
+}
+@mixin height($h:0,$lh:$h) {
+  height: $h;
+  line-height: $lh;
+}
+@mixin wH($w:0,$h:0) {
+  width:$w;
+  height: $h;
+}
+@mixin border($bw:2rpx,$bc:$colorF,$bs:solid) {
+  border: $bw $bs $bc; 
+}
+
+@mixin fiexdTop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+// 显示省略号
+@mixin textEllipsis {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+// 两行文字显示省列好
+@mixin textEllipsisTwo($row:2){
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: $row;
+	-webkit-box-orient: vertical;
+	display: -moz-box;
+	-moz-line-clamp: $row;
+	-moz-box-orient: vertical;
+	word-wrap: break-word;
+	word-break: break-all;
+	white-space: normal;
+}
+
+// 滑动需要
+@mixin comomSlide {
+	overflow: hidden;
+	white-space: nowrap;
+	text-align: right;
+	// 滑动时取消滚动条
+	&::-webkit-scrollbar {
+	    width: 0;
+	    height: 0;
+	    color: transparent;
+	}
+}

@@ -1,0 +1,388 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "智慧校园"
+			}
+		},
+		{
+			"path": "pages/mine/index",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		}
+        ,{
+            "path" : "pages/mine/instruction-use",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "使用介绍",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/about-mine",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "关于我们",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/switch-roleType",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "切换角色",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "东龙校园",
+		"navigationBarBackgroundColor": "#00b6f1",
+		"backgroundColor": "#00b6f1"
+		// #ifdef H5
+		,"navigationStyle":"custom"
+		// #endif
+	},
+	"tabBar":{
+		"color":"#ccc",
+		"selectedColor":"#00b6f1",
+		"backgroundColor":"#fff",
+		"list":[
+			{
+				"iconPath":"static/img/tabbar/home.png",
+				"text":"首页",
+				"selectedIconPath":"static/img/tabbar/homes.png",
+				"pagePath":"pages/index/index"
+			},{
+				"iconPath":"static/img/tabbar/mine.png",
+				"selectedIconPath":"static/img/tabbar/mines.png",
+				"text":"我的",
+				"pagePath":"pages/mine/index"
+			}
+		]
+	},
+	"subPackages":[
+		{
+			"root":"parent",
+			"pages":[
+				{
+				    "path" : "home/add-baby",
+				    "style" :                                                                                    
+				    {
+				        "navigationBarTitleText": " ",
+				        "enablePullDownRefresh": false
+				    }
+				    
+				}
+			    ,{
+                    "path" : "home/switch-baby",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "切换宝贝",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "home/class-schedule",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "课程表",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "home/address-record",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "通讯录",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "home/record-list",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": " ",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "home/select-role",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "选择身份",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "home/parent-bind",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": " 绑定账号 ",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "security/card-setting",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "security/sleep-mode",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "睡眠模式",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "security/classroom-pattern",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "课堂模式",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "security/classroom-add",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "security/call-baby",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "呼叫宝贝",
+                    "enablePullDownRefresh": false
+                }
+                }
+                ,{
+                    "path" : "security/remote-listening",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "远程聆听",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "security/kiss-number",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "亲情号码",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "security/whilte-list",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "白名单",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "security/sport-record",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "security/battery-information",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "电量信息",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "security/text-information",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "短信信息",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "security/information-detail",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "内容",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "home/home-work",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "家庭作业",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "home/notice-inform",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "学校通知",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "home/work-dateil",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "作业内容",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "security/real-time-location",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "实时定位",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "security/danger-area",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "危险区域",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "security/security-area",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "安全区域",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "security/trajectory-playback",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "个人足迹",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "security/security-handle",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "操作安全区域",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "security/danger-handle",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "操作危险区域",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "home/campus-news",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "校园新闻",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "home/campus-dateil",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "详情",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "home/attendance-record",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "考勤记录",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "home/attendance-count",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "考勤统计",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+		},
+		{
+			"root":"tearch",
+			"pages":[
+				 {
+					"path" : "home/tearch-bind",
+					"style" :                                                                                    
+				{
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+				
+				}
+			]
+		}
+	],
+	"preloadRule": {
+		// 进入某个页面提前下载分包
+		"": {
+			"network": "all",
+			"packages": ["parent","tearch"]
+		}
+	},
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	}
+}
